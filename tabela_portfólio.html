@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Prático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f6ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            max-width: 600px;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 12px;
+            background: #0077cc;
+            color: white;
+        }
+
+        thead th {
+            background: #005fa3;
+            color: white;
+            padding: 12px;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f2f8ff;
+        }
+
+        tbody tr:nth-child(odd) {
+            background: #ffffff;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #d0e2f5;
+        }
+
+        th[scope="row"] {
+            background: #e6f2ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Preços em reais de ameixa e pêra em Boca do Acre</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Ameixa Preta</th>
+                <th scope="col">Pêra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Atacado</th>
+                <td>1,00</td>
+                <td>1,50</td>
+            </tr>
+            <tr>
+                <th scope="row">Varejo</th>
+                <td>2,00</td>
+                <td>3,00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
